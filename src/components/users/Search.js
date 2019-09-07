@@ -16,6 +16,13 @@ class Search extends React.Component {
 
     onSubmit = (e) => {
         e.preventDefault();
+
+        if (this.state.text === '')
+        {
+            this.props.setAlert('Please enter search query', 'light')
+            return;
+        }
+
         this.props.searchUsers(this.state.text);
         this.setState({text: ''});
     }
