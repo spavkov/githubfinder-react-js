@@ -3,9 +3,6 @@ import React, {useState} from 'react';
 const Search = ( props ) => {
 
     const [text, setText] = useState('');
-    const state = {
-        text: ''
-      }
 
     const onTextChanged = (event) => {
         setText(event.target.value);
