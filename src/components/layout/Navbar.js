@@ -13,7 +13,10 @@ const Navbar = (props) => {
                     </li>
                     <li>
                         <Link to="/about">about</Link>
-                    </li>                    
+                    </li>        
+                    <li>
+                        <Link to="/user/roboblob">roboblob</Link>
+                    </li>                                  
                 </ul>
             </nav>
 

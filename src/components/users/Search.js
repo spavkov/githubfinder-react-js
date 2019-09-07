@@ -36,8 +36,7 @@ const Search = ( props ) => {
                 props.showClear ? 
                 <button className="btn btn-light btn-block" onClick={doClearUsers}>Clear</button>
                 : ""
-            }
-            
+            }            
         </div>
     );
 }

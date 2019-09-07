@@ -9,6 +9,7 @@ class Home extends React.Component {
 
   state = {
     users: [],
+    user: {},
     loading: false,
     alert: null
   };
@@ -38,6 +39,9 @@ class Home extends React.Component {
       users: res.data.items
     });
   };
+
+
+
 
   setAlert = (message, type) =>  {
     this.setState({

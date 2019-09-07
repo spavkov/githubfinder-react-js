@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/layout/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
+import User from './components/pages/User';
 import {BrowserRouter as Router, Route } from 'react-router-dom'
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
         <div className='container'>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/user/:login" component={User} />
         </div>
       </div>
     </Router>
