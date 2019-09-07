@@ -21,6 +21,11 @@ const Search = ( props ) => {
         setText(text);
     }
 
+    const doClearUsers = () => {
+        setText('');
+        props.clearUsers();
+    };
+
     return(
         <div>
             <form className="form" onSubmit={onSubmit} >
@@ -29,7 +34,7 @@ const Search = ( props ) => {
             </form>
             {
                 props.showClear ? 
-                <button className="btn btn-light btn-block" onClick={props.clearUsers}>Clear</button>
+                <button className="btn btn-light btn-block" onClick={doClearUsers}>Clear</button>
                 : ""
             }
             
