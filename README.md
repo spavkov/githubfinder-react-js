@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Its simple GitHub search page.
+
+It uses GitHub app client secret and id available (https://github.com/settings/applications/1130712), in env variables:
+REACT_APP_GITHUB_CLIENT_ID=''
+REACT_APP_GITHUB_CLIENT_SECRET=''
+
 ## Available Scripts
 
 In the project directory, you can run:
