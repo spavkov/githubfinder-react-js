@@ -6,11 +6,8 @@ import Home from './components/pages/Home';
 import User from './components/pages/User';
 import {BrowserRouter as Router, Route } from 'react-router-dom'
 
-class App extends React.Component {
+const App = () => {
 
-  alert = null;
-
-  render() {
     return(
     <Router>
       <div className="App">
@@ -23,7 +20,6 @@ class App extends React.Component {
       </div>
     </Router>
   );
-  }
 
 }
 
