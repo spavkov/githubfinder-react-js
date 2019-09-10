@@ -29,7 +29,7 @@ const Search = ( props ) => {
 
     const doClearUsers = () => {
         setText('');
-        githubContext.clearUsers();
+        gitHubContext.clearUsers();
     };
 
     return(

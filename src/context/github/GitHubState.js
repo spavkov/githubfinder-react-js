@@ -49,7 +49,8 @@ const GithubState = props => {
                 users: state.users,
                 user: state.user,
                 loading: state.loading,
-                searchUsers
+                searchUsers,
+                clearUsers
             }}
             >
             {props.children}                
