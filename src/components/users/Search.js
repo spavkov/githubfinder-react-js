@@ -1,5 +1,7 @@
 import React, {useState, useContext} from 'react';
 import GitHubContext from '../../context/github/gitHubContext';
+import githubContext from '../../context/github/gitHubContext';
+import { CLEAR_USERS } from '../../context/types';
 
 const Search = ( props ) => {
 
@@ -16,7 +18,7 @@ const Search = ( props ) => {
 
         if (text === '')
         {
-            props.setAlert('Please enter search query', 'light')
+            props.setAlert('Ple ase enter search query', 'light')
             return;
         }
 
@@ -26,7 +28,7 @@ const Search = ( props ) => {
 
     const doClearUsers = () => {
         setText('');
-        props.clearUsers();
+        githubContext.clearUsers();
     };
 
     return(
@@ -36,7 +38,7 @@ const Search = ( props ) => {
                 <input type="submit" value="Search" className="btn btn-dark btn-block" />
             </form>
             {
-                props.showClear ? 
+                githubContext.users.length > 0 ? 
                 <button className="btn btn-light btn-block" onClick={doClearUsers}>Clear</button>
                 : ""
             }            
