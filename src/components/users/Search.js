@@ -1,6 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import GitHubContext from '../../context/github/gitHubContext';
 
 const Search = ( props ) => {
+
+    const gitHubContext = useContext(GitHubContext);
 
     const [text, setText] = useState('');
 
@@ -17,7 +20,7 @@ const Search = ( props ) => {
             return;
         }
 
-        props.searchUsers(text);
+        gitHubContext.searchUsers(text);
         setText(text);
     }
 
