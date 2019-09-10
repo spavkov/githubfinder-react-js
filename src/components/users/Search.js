@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react';
 import GitHubContext from '../../context/github/gitHubContext';
 import githubContext from '../../context/github/gitHubContext';
 import { CLEAR_USERS } from '../../context/types';
+import { statement } from '@babel/template';
 
 const Search = ( props ) => {
 
@@ -38,7 +39,7 @@ const Search = ( props ) => {
                 <input type="submit" value="Search" className="btn btn-dark btn-block" />
             </form>
             {
-                githubContext.users.length > 0 ? 
+                gitHubContext.users.length > 0 ? 
                 <button className="btn btn-light btn-block" onClick={doClearUsers}>Clear</button>
                 : ""
             }            
