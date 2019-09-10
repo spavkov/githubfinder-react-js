@@ -1,8 +1,5 @@
 import React, {useState, useContext} from 'react';
 import GitHubContext from '../../context/github/gitHubContext';
-import githubContext from '../../context/github/gitHubContext';
-import { CLEAR_USERS } from '../../context/types';
-import { statement } from '@babel/template';
 
 const Search = ( props ) => {
 

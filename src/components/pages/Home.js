@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import Users from '../users/Users'
-import axios from 'axios';
 import Search from '../users/Search';
 import Alert from '../layout/Alert';
 
@@ -19,7 +18,7 @@ class Home extends React.Component {
   }
 
   async componentDidUpdate() {
-    
+
   }
 
   clearUsers = () => {
@@ -43,7 +42,7 @@ class Home extends React.Component {
 
       <Alert alert={this.state.alert} />
 
-      <Search clearUsers={this.clearUsers} showClear={this.state.users.length > 0 ? true : false} setAlert={this.setAlert} />
+      <Search clearUsers={this.clearUsers} setAlert={this.setAlert} />
       <Users />
       </>
     );
